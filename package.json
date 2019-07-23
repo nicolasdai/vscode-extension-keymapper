@@ -1,50 +1,62 @@
 {
-	"name": "bdkm",
-	"displayName": "BDKeyMapper",
-	"description": "Personal Key Mapper",
-	"version": "1.0.0",
-	"publisher": "daigd",
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:nicolasdai/vscode-extension-keymapper.git"
-	},
-
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"keybindings": [
-			{
-				"key": "alt+shift+f",
-				"command": "references-view.find",
-				"when": "editorHasReferenceProvider"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.0-next.0"
-	}
+    "name": "bdkm",
+    "displayName": "BDKeyMapper",
+    "description": "Personal Key Mapper",
+    "version": "1.0.0",
+    "publisher": "daigd",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:nicolasdai/vscode-extension-keymapper.git"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.helloWorld"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "alt+shift+f",
+                "command": "references-view.find",
+                "when": "editorHasReferenceProvider"
+            },
+            {
+                "key": "alt+g",
+                "command": "editor.action.revealDefinition",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            },
+            {
+                "key": "ctrl+e ctrl+d",
+                "command": "editor.action.formatDocument",
+                "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "shift+alt+s",
+                "command": "workbench.action.showAllSymbols"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^10.12.21",
+        "@types/vscode": "^1.36.0",
+        "glob": "^7.1.4",
+        "mocha": "^6.1.4",
+        "typescript": "^3.3.1",
+        "tslint": "^5.12.1",
+        "vscode-test": "^1.0.0-next.0"
+    }
 }
