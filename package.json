@@ -3,7 +3,7 @@
 	"displayName": "BDKeyMapper",
 	"description": "Personal Key Mapper",
 	"version": "1.0.0",
-	"publisher": "Nicolas Dai",
+	"publisher": "daigd",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
