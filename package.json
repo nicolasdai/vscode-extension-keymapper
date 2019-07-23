@@ -2,7 +2,7 @@
 	"name": "bdkm",
 	"displayName": "BDKeyMapper",
 	"description": "Personal Key Mapper",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -16,10 +16,10 @@
 	"contributes": {
 		"keybindings": [
 			{
-                "key": "alt+shift+f",
+				"key": "alt+shift+f",
 				"command": "references-view.find",
 				"when": "editorHasReferenceProvider"
-            }
+			}
 		]
 	},
 	"scripts": {
