@@ -16,7 +16,7 @@
 	"contributes": {
 		"keybindings": [
 			{
-                "key": "ctrl+shift+f",
+                "key": "alt+shift+f",
 				"command": "references-view.find",
 				"when": "editorHasReferenceProvider"
             }
