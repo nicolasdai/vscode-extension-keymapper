@@ -2,7 +2,7 @@
 	"name": "bdkm",
 	"displayName": "BDKeyMapper",
 	"description": "Personal Key Mapper",
-	"version": "2.0.0",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
