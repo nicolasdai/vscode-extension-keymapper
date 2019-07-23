@@ -7,6 +7,12 @@
 	"engines": {
 		"vscode": "^1.36.0"
 	},
+
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:nicolasdai/vscode-extension-keymapper.git"
+	},
+
 	"categories": [
 		"Other"
 	],
