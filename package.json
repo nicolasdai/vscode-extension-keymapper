@@ -39,6 +39,12 @@
                 "key": "shift+alt+s",
                 "command": "workbench.action.showAllSymbols"
             }
+        ],
+        "snippets": [
+            {
+                "language": "csharp",
+                "path": "./csharp.json"
+            }
         ]
     },
     "scripts": {

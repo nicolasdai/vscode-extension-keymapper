@@ -1,0 +1,50 @@
+{
+	"Bindable Command" : 
+	{
+		"prefix" : "bindc",
+		"body" : [
+		"public ICommand $1Command { get; private set;}",
+		"$0"
+		],
+		"description":"create bindable command"
+	},
+
+	"Bindable Property" :
+	{
+		"prefix" : "bindp",
+		"body" : [
+		"public ${1:type} ${2:property name}",
+		"{",
+		"    get { return ${3:property}; }",
+		"    set { SetProperty(ref ${3:property}, value, \"${2:property name}\"); }",	
+		"}",
+		"private ${1:type} ${3:property};",
+		"$0"
+		],
+		"description":"create bindable command"
+	},
+
+	"Command Callback" :
+	{
+		"prefix" : "relaycommand",
+		"body": [
+			"new RelayCommand(() =>",
+			"{",
+			"    $0",
+			"});"
+		]
+	},
+
+	"Singleton" :
+	{
+		"prefix" : "singleton",
+		"body": [
+			"public static ${1:type} Instance",
+			"{",
+			"    get { return _instance; }",
+			"}",
+			"private static ${1:type} _instance;"
+		]
+	}
+	
+}
